@@ -1,6 +1,6 @@
 body {
     background: url('../images/background.jpg') center center no-repeat;
-    background-size: cover;
+    background-size: 100%;
     color: #333;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -439,6 +439,63 @@ header .phone .order {
 .block-feedback .map {
     margin: 20px 0 -40px;
     height: 200px;
+}
+
+.block-feedback .slider {
+    padding: 0 20px;
+    position: relative;
+}
+
+.block-feedback .slider .slide img {
+    border: 3px solid #f29400;
+    height: 156px;
+    margin-bottom: 15px;
+    width: 226px;
+}
+
+.block-feedback .slider .slide .short {
+    margin: 20px;
+}
+
+.block-feedback .slider .slide .short:before {
+    color: #f29400;
+    content: '« ';
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 0;
+}
+
+.block-feedback .slider .slide .short:after {
+    color: #f29400;
+    content: ' »';
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 0;
+}
+
+.block-feedback .slider .slide .full {
+    display: none;
+}
+
+.block-feedback .slider .slick-arrow {
+    border: 0;
+    display: inline-block;
+    font-size: 0;
+    height: 25px;
+    margin-top: -12px;
+    position: absolute;
+    top: 50%;
+    width: 25px;
+}
+
+.block-feedback .slider .slick-prev {
+    background: url('../images/arrow-previous.png') center center no-repeat;
+    left: 0;
+}
+
+.block-feedback .slider .slick-next {
+    background: url('../images/arrow-next.png') center center no-repeat;
+    right: 0;
 }
 
 .block-about p {

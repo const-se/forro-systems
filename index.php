@@ -165,7 +165,19 @@ include_once 'core.php';
                 <h2><?php echo $config['feedback_h2']; ?></h2>
                 <div id="slider-feedback" class="slider">
                     <?php foreach ($config['slider_feedback'] as $feedback): ?>
-                        <div class="slide"></div>
+                        <div class="slide">
+                            <img src="/images/feedback/<?php echo $feedback['image']; ?>" alt="Отзыв"/>
+                            <p class="short">
+                                <?php echo $feedback['text_short']; ?>
+                                <a href="#">Подробнее</a>
+                            </p>
+                            <div class="full">
+                                <?php foreach ($feedback['text_full'] as $text): ?>
+                                    <p><?php echo $text; ?></p>
+                                <?php endforeach; ?>
+                                <span><?php echo $feedback['name']; ?></span>
+                            </div>
+                        </div>
                     <?php endforeach; ?>
                 </div>
             </div>
