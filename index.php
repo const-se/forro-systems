@@ -3,7 +3,7 @@ define('FORRO_SYSTEMS', true);
 include_once 'config.php';
 include_once 'core.php';
 ?><!DOCTYPE html>
-<html lang="ru" ng-app="forro">
+<html lang="ru" ng-app="forro" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
     <head>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
@@ -12,6 +12,12 @@ include_once 'core.php';
         <meta name="keywords" content="<?php echo $content['keywords']; ?>"/>
         <meta name="robots" content="index, follow"/>
         <meta name="copyright" content="Constantine Seleznyoff <const.seoff@gmail.com>"/>
+        <meta property="og:title" content="<?php echo $content['og_title']; ?>"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="<?php echo $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST']; ?>"/>
+        <meta property="og:image" content="<?php echo $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $content['og_image']; ?>"/>
+        <meta property="og:description" content="<?php echo $content['description']; ?>"/>
+        <meta property="og:locale" content="ru_RU"/>
         <link rel="shortcut icon" href="/favicon.ico"/>
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext"/>
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext"/>
