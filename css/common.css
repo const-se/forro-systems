@@ -106,25 +106,25 @@ p {
 
 .header {
     background-color: #f3e7d7;
-    height: 120px;
+    height: 140px;
 }
 
 .header__logo {
     background: url('/images/logo.png') center center no-repeat;
-    height: 80px;
+    height: 100px;
     left: 20px;
     position: absolute;
     top: 20px;
-    width: 220px;
+    width: 250px;
 }
 
 .header__caption {
     font-size: 22px;
     left: 50%;
-    margin-left: -200px;
+    margin-left: -175px;
     position: absolute;
     text-align: center;
-    top: 20px;
+    top: 30px;
     width: 400px;
 }
 
@@ -132,7 +132,7 @@ p {
     position: absolute;
     right: 20px;
     text-align: right;
-    top: 30px;
+    top: 40px;
 }
 
 .header__phone-number {

@@ -30,9 +30,7 @@ include_once 'core.php';
         <div class="page" ng-controller="ForroSystemsController" ng-cloak>
             <header class="header">
                 <div class="wrapper">
-                    <div class="header__logo">
-                        <img src="/images/logo.png" alt="FORRO Systems"/>
-                    </div>
+                    <div class="header__logo"></div>
                     <h1 class="header__caption">{% content.header.caption %}</h1>
                     <div class="header__phone">
                         <a href="tel:{% content.header.phone_number_link %}" class="header__phone-number">{% content.header.phone_number %}</a>
