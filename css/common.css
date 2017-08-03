@@ -47,7 +47,7 @@ p {
 
 .page {
     background: url('/images/background.jpg') center center no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     min-width: 1020px;
     position: relative;
 }
@@ -261,8 +261,14 @@ p {
     margin-top: 40px;
 }
 
+.main-slider__price {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
 .main-slider__caption,
-.main-slider__description {
+.main-slider__description,
+.main-slider__price {
     text-shadow: 0 0 2px #e8d0b0;
 }
 
@@ -289,6 +295,68 @@ p {
     background-color: #f9f3eb;
     color: #333;
     text-decoration: none;
+}
+
+.catalog__tabs {
+    bottom: -1px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.catalog__tab {
+    border: 1px solid transparent;
+    border-bottom-color: #e8d0b0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: inline-block;
+    padding: 10px 40px;
+    transition: all 0.25s ease-in-out;
+}
+
+.catalog__tab a {
+    color: #590900;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.catalog__tab a:focus,
+.catalog__tab a:hover {
+    color: #590900;
+    text-decoration: none;
+}
+
+.catalog__tab_active,
+.catalog__tab:hover {
+    background-color: #f3e7d7;
+    border-color: #e8d0b0;
+    border-bottom-color: #f3e7d7;
+}
+
+.catalog__tab-body {
+    background: linear-gradient(180deg, #f3e7d7 0%, transparent 50%);
+    border-top: 1px solid #e8d0b0;
+    display: none;
+    min-height: 400px;
+    padding: 40px 0;
+}
+
+.catalog__product {
+    margin-bottom: 20px;
+}
+
+.catalog__product-caption {
+    display: block;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.catalog__gallery {
+    margin-top: 40px;
+    text-align: center;
 }
 
 .usage__text {
@@ -624,4 +692,49 @@ p {
 
 .modal-form form label {
     font-size: 14px;
+}
+
+.modal-convectors,
+.modal-radiators {
+    margin-left: -450px;
+    width: 900px;
+}
+
+.modal-convectors__caption,
+.modal-radiators__caption {
+    color: #590900;
+    font-weight: bold;
+}
+
+.modal-convectors__description,
+.modal-radiators__description {
+    font-size: 14px;
+}
+
+.modal-convectors__slider,
+.modal-radiators__slider {
+    padding: 0;
+}
+
+.modal-convectors__slider .slick-arrow,
+.modal-radiators__slider .slick-arrow {
+    background-color: #fff;
+    border-radius: 60%;
+    box-shadow: 0 0 2px 3px #fff;
+    z-index: 2;
+}
+
+.modal-convectors__slider .slick-prev,
+.modal-radiators__slider .slick-prev {
+    left: 10px;
+}
+
+.modal-convectors__slider .slick-next,
+.modal-radiators__slider .slick-next {
+    right: 10px;
+}
+
+.modal-convectors__image,
+.modal-radiators__image {
+    height: 400px !important;
 }

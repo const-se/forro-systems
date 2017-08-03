@@ -17,6 +17,17 @@ function prepareContent($content)
     }, $content['main_slider']);
     shuffle($content['main_slider']);
 
+    $content['catalog']['slider']['convectors'] = array_map(function ($convector) {
+        $convector['image'] = '/images/convectors/' . $convector['image'];
+
+        return $convector;
+    }, $content['catalog']['slider']['convetors']);
+    $content['catalog']['slider']['radiators'] = array_map(function ($radiator) {
+        $radiator['image'] = '/images/radiators/' . $radiator['image'];
+
+        return $radiator;
+    }, $content['catalog']['slider']['radiators']);
+
     $content['usage']['slider'] = array_map(function ($slide) {
         $slide['style'] = array('background-image' => "url('/images/usage-slider/{$slide['image']}')");
 

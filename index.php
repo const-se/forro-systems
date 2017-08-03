@@ -74,8 +74,38 @@ include_once 'core.php';
                     <div class="wrapper">
                         <h2 class="main-slider__caption"></h2>
                         <p class="main-slider__description"></p>
+                        <p class="main-slider__price"></p>
                     </div>
                     <a href="#" class="main-slider__button order">Узнать подробности</a>
+                </div>
+            </div>
+            <div class="catalog block">
+                <ul class="catalog__tabs">
+                    <li class="catalog__tab" data-tab="convectors">
+                        <a href="#">Конвекторы</a>
+                    </li>
+                    <li class="catalog__tab" data-tab="radiators">
+                        <a href="#">Радиаторы</a>
+                    </li>
+                </ul>
+                <div class="catalog__tab-body" data-tab-body="convectors">
+                    <div class="wrapper">
+                        Здесь тоже будет описание и галерея
+                        <p class="catalog__gallery">
+                            <a href="#" class="button catalog__convectors-button" data-modal=".modal-convectors">Посмотреть галерею</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="catalog__tab-body" data-tab-body="radiators">
+                    <div class="wrapper">
+                        <p class="catalog__product" ng-repeat="product in content.catalog.radiators">
+                            <span class="catalog__product-caption">&bull; {% product.caption %}</span>
+                            {% product.text %}
+                        </p>
+                        <p class="catalog__gallery">
+                            <a href="#" class="button catalog__radiators-button" data-modal=".modal-radiators">Посмотреть галерею</a>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="work block">
@@ -240,6 +270,36 @@ include_once 'core.php';
             <div class="modal-form block_shadow modal-feedback">
                 <a href="#" class="modal-form__close">&times;</a>
                 <h3 class="modal-form__caption">Отзыв</h3>
+            </div>
+            <div class="modal-form block-shadow modal-convectors">
+                <a href="#" class="modal-form__close">&times;</a>
+                <h3 class="modal-form__caption">Галерея конвекторов</h3>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h4 class="modal-convectors__caption"></h4>
+                        <div class="modal-convectors__description"></div>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="modal-convectors__slider slider_arrows">
+                            <img ng-src="{% convector.image %}" class="modal-convectors__image" ng-repeat="convector in content.catalog.slider.convectors"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-form block-shadow modal-radiators">
+                <a href="#" class="modal-form__close">&times;</a>
+                <h3 class="modal-form__caption">Галерея радиаторов</h3>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h4 class="modal-radiators__caption"></h4>
+                        <div class="modal-radiators__description"></div>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="modal-radiators__slider slider_arrows">
+                            <img ng-src="{% radiator.image %}" class="modal-radiators__image" ng-repeat="radiator in content.catalog.slider.radiators"/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
