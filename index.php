@@ -151,15 +151,6 @@ include_once 'core.php';
                     </div>
                 </div>
             </div>
-            <a name="suppliers"></a>
-            <div class="suppliers block block_white block_shadow">
-                <div class="wrapper">
-                    <h2>{% content.suppliers.caption %}</h2>
-                    <div class="suppliers__slider slider_arrows">
-                        <img class="suppliers__slide" ng-src="{% image %}" ng-repeat="image in content.suppliers.slider" alt="Поставщики"/>
-                    </div>
-                </div>
-            </div>
             <div class="stages block">
                 <div class="wrapper">
                     <h2>{% content.stages.caption %}</h2>
@@ -175,6 +166,15 @@ include_once 'core.php';
                         &nbsp;
                         <a href="#" class="button order">Хочу радиатор!</a>
                     </p>
+                </div>
+            </div>
+            <a name="suppliers"></a>
+            <div class="suppliers block block_white block_shadow">
+                <div class="wrapper">
+                    <h2>{% content.suppliers.caption %}</h2>
+                    <div class="suppliers__slider slider_arrows">
+                        <img class="suppliers__slide" ng-src="{% image %}" ng-repeat="image in content.suppliers.slider" alt="Поставщики"/>
+                    </div>
                 </div>
             </div>
             <a name="stock"></a>
