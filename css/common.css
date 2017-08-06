@@ -338,7 +338,6 @@ p {
     background: linear-gradient(180deg, #f3e7d7 0%, transparent 50%);
     border-top: 1px solid #e8d0b0;
     display: none;
-    min-height: 400px;
     padding: 40px 0;
 }
 

@@ -21,7 +21,7 @@ function prepareContent($content)
         $convector['image'] = '/images/convectors/' . $convector['image'];
 
         return $convector;
-    }, $content['catalog']['slider']['convetors']);
+    }, $content['catalog']['slider']['convectors']);
     $content['catalog']['slider']['radiators'] = array_map(function ($radiator) {
         $radiator['image'] = '/images/radiators/' . $radiator['image'];
 

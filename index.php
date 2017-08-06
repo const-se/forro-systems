@@ -88,7 +88,10 @@ include_once 'core.php';
                 </ul>
                 <div class="catalog__tab-body" data-tab-body="convectors">
                     <div class="wrapper">
-                        Здесь тоже будет описание и галерея
+                        <p class="catalog__product" ng-repeat="product in content.catalog.convectors">
+                            <span class="catalog__product-caption">&bull; {% product.caption %}</span>
+                            {% product.text %}
+                        </p>
                         <p class="catalog__gallery">
                             <a href="#" class="button catalog__convectors-button" data-modal=".modal-convectors">Посмотреть галерею</a>
                         </p>
