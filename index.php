@@ -303,15 +303,62 @@ include_once 'core.php';
                 </div>
             </div>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="/js/slick.min.js"></script>
         <script src="/js/flipcountdown.js"></script>
-        <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-        <script src="//www.google.com/recaptcha/api.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
         <script src="/js/common.js"></script>
         <script>
             var content = <?php echo prepareContent($content); ?>;
         </script>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter31399348 = new Ya.Metrika({id:31399348,
+                            webvisor:true,
+                            clickmap:true,
+                            accurateTrackBounce:true});
+                    } catch(e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="//mc.yandex.ru/watch/31399348" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        <script data-skip-moving="true">
+            (function(w,d,u,b){
+                s=d.createElement('script');r=(Date.now()/1000|0);s.async=1;s.src=u+'?'+r;
+                h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+            })(window,document,'https://cdn.bitrix24.ru/b3875801/crm/site_button/loader_2_6szrav.js');
+        </script>
+        <!-- Yandex.Metrika counter -->
+        <script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            try {
+                var yaCounter44900068 = new Ya.Metrika({
+                    id:44900068,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/44900068" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
     </body>
 </html>

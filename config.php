@@ -195,7 +195,7 @@ $content = array(
         ),
     ),
     'work' => array(
-        'video' => '//www.youtube.com/embed/WSCnibXFHD4',
+        'video' => 'https://www.youtube.com/embed/WSCnibXFHD4',
     ),
     'usage' => array(
         'caption' => 'Где используются конвекторы?',
