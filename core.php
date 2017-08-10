@@ -7,8 +7,12 @@ if (!defined('FORRO_SYSTEMS')) {
 
 function prepareContent($content)
 {
-    $content['header']['phone_number_link'] =
-        '+7' . mb_substr(preg_replace('/[^0-9]/', '', $content['header']['phone_number']), -10);
+    $content['header']['phone_numbers'] = array_map(function ($phone) {
+        return array(
+            'link' => '+7' . mb_substr(preg_replace('/[^0-9]/', '', $phone), -10),
+            'number' => $phone,
+        );
+    }, $content['header']['phone_numbers']);
 
     $content['main_slider'] = array_map(function ($slide) {
         $slide['style'] = array('background-image' => "url('/images/main-slider/{$slide['image']}')");

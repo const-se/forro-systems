@@ -91,12 +91,12 @@ forro.controller('ForroSystemsController', function ($scope) {
         });
         ymaps.ready(function () {
             var map = new ymaps.Map('map', {
-                center: [56.0963,40.3478],
+                center: $scope.content.map.coords,
                 controls: ['fullscreenControl', 'zoomControl'],
                 zoom: 17
             });
             map.geoObjects.add(new ymaps.Placemark(
-                [56.0963,40.3478],
+                $scope.content.map.coords,
                 {balloonContent: $scope.content.map.text, iconCaption: $('#map').attr('data-icon-text')},
                 {preset: 'islands#blueDotIconWithCaption', iconColor: '#580d00'}
             ));

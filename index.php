@@ -33,8 +33,7 @@ include_once 'core.php';
                     <div class="header__logo"></div>
                     <h1 class="header__caption">{% content.header.caption %}</h1>
                     <div class="header__phone">
-                        <a href="tel:{% content.header.phone_number_link %}" class="header__phone-number">{% content.header.phone_number %}</a>
-                        <br/>
+                        <a href="tel:{% phone.link %}" class="header__phone-number" ng-repeat="phone in content.header.phone_numbers">{% phone.number %}</a>
                         <a href="#" class="header__order order">заказать обратный звонок</a>
                     </div>
                 </div>
