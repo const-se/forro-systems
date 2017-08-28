@@ -35,6 +35,7 @@ include_once 'core.php';
                     <div class="header__phone">
                         <a href="tel:{% phone.link %}" class="header__phone-number" ng-repeat="phone in content.header.phone_numbers">{% phone.number %}</a>
                         <a href="#" class="header__order order">заказать обратный звонок</a>
+                        <a href="mailto:{% content.header.email %}" class="header__email">{% content.header.email %}</a>
                     </div>
                 </div>
             </header>
@@ -229,8 +230,9 @@ include_once 'core.php';
                             &copy; {% content.footer.years %} Forro Systems
                         </div>
                         <div class="col-xs-4 footer_center">
-                            <h3 class="footer__caption">Наши телефоны</h3>
+                            <h3 class="footer__caption">Наши контакты</h3>
                             <a href="tel:{% phone.number_link %}" ng-repeat="phone in content.footer.phones" class="footer__phone">{% phone.number %}</a>
+                            <a href="mailto:{% content.header.email %}" class="footer__phone">{% content.header.email %}</a>
                         </div>
                         <div class="col-xs-4 footer_right">
                             <h3 class="footer__caption">Мы в соцсетях</h3>

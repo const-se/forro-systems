@@ -17,6 +17,7 @@ $content = array(
             '8 (4922) 60-08-54',
             '8 (930) 830-08-54',
         ),
+        'email' => 'sale@forro-systems.ru',
     ),
     'main_slider' => array(
         array(

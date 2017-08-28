@@ -139,7 +139,7 @@ p {
     color: #333;
     display: block;
     font-family: 'PT Sans Caption', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -153,13 +153,29 @@ p {
 .header__order {
     border-bottom: 1px solid transparent;
     color: #333;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
 }
 
 .header__order:focus,
 .header__order:hover {
     border-bottom: 1px dashed #333;
+    color: #333;
+    text-decoration: none;
+}
+
+.header__email {
+    color: #333;
+    display: block;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.header__email:focus,
+.header__email:hover {
     color: #333;
     text-decoration: none;
 }
